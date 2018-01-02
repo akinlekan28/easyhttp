@@ -17,7 +17,7 @@
 
 <h4>Instantiate the library</h4>
 ```javascript
-const http = new easyHTTP();
+const http = new easyHTTP;
 ````
 -Basic barebone
 
@@ -35,7 +35,7 @@ http.get('API ENDPOINT', CALLBACK FUNCTION){}
   }
  });
  ```
-
+```javascript
 //Get single post
  http.get('https://jsonplaceholder.typicode.com/post/1', function (err, post) {
    if (err) {
@@ -44,19 +44,22 @@ http.get('API ENDPOINT', CALLBACK FUNCTION){}
      console.log(post)
    }
  });
-
+```
 
  <h4>To make a post request</h4>
 
 -Basic barebone
 http.post('API ENDPOINT', DATA, CALLBACK FUNCTION){}
 
+```javascript
  //Create Data
 const data = {
   title: 'Custom Post',
   body: 'This is a custom post'
 };
+```
 
+```javascript
 //Create Post
  http.post('https://jsonplaceholder.typicode.com/posts', data, function(err, post){
    if (err) {
@@ -65,13 +68,14 @@ const data = {
      console.log(post)
    }
  });
-
+```
 
 <h4>To make a put request</h4>
 
 -Basic barebone
 http.post('API ENDPOINT', DATA, CALLBACK FUNCTION){}
 
+```javascript
 //Update post
  http.put('https://jsonplaceholder.typicode.com/posts/1', data, function(err,post){
    if (err) {
@@ -80,6 +84,7 @@ http.post('API ENDPOINT', DATA, CALLBACK FUNCTION){}
      console.log(post)
    }
  });
+```
 
 
 <h4>To make a delete request</h4>
@@ -87,6 +92,7 @@ http.post('API ENDPOINT', DATA, CALLBACK FUNCTION){}
 Basic barebone
 http.post('API ENDPOINT', CALLBACK FUNCTION){}
 
+```javascript
 //Delete post
 http.delete('https://jsonplaceholder.typicode.com/posts/1', function (err, response) {
   if (err) {
