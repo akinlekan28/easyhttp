@@ -16,9 +16,9 @@
     <script src="app.js"></script>
 
 <h4>Instantiate the library</h4>
-```javascript
-const http = new easyHTTP;
-````
+
+<h5>const http = new easyHTTP;</h5>
+
 -Basic barebone
 
 http.get('API ENDPOINT', CALLBACK FUNCTION){}
@@ -101,4 +101,3 @@ http.delete('https://jsonplaceholder.typicode.com/posts/1', function (err, respo
     console.log(response)
   }
 }); ```
-</body> 
