@@ -18,11 +18,14 @@
 <h4>Instantiate the library</h4>
 ```javascript
 const http = new easyHTTP();
-
+````
 -Basic barebone
+
 http.get('API ENDPOINT', CALLBACK FUNCTION){}
 
 <h4>To make get request {api used in this example is Jsonplaceholder, a fake rest api} </h4>
+
+```javascript
 //Get posts
  http.get('https://jsonplaceholder.typicode.com/posts', function(err, posts){
   if(err){
@@ -31,6 +34,7 @@ http.get('API ENDPOINT', CALLBACK FUNCTION){}
     console.log(posts)
   }
  });
+ ```
 
 //Get single post
  http.get('https://jsonplaceholder.typicode.com/post/1', function (err, post) {
