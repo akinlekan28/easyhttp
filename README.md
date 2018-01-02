@@ -1,28 +1,27 @@
 # easyhttp
-A minimal library for making http requests built with vanilla javascript
+<strong>A minimal library for making http requests built with vanilla javascript</strong>
 
-#HTTP Methods
-get,
-post,
-put,
-delete
+<h4>HTTP Methods</h4>
+<p>get</p>
+<p>post</p>
+<p>put</p>
+<p>delete</p>
 
-#Usage
--Include the easyhttp library into your source file before your custom javascript file.
+<h4>Usage</h4>
+<strong>Include the easyhttp library into your source file before your custom javascript file.</strong>
   <body>
     <h1>EasyHTTP Example</h1>
 
     <script src="easyhttp.js"></script>
     <script src="app.js"></script>
-  </body> 
 
--Instantiate the library
+<h4>Instantiate the library</h4>
 const http = new easyHTTP();
 
 -Basic barebone
 http.get('API ENDPOINT', CALLBACK FUNCTION){}
 
--To make get request {api used in this example is Jsonplaceholder, a fake rest api}
+<h4>To make get request {api used in this example is Jsonplaceholder, a fake rest api} </h4>
 //Get posts
  http.get('https://jsonplaceholder.typicode.com/posts', function(err, posts){
   if(err){
@@ -42,7 +41,7 @@ http.get('API ENDPOINT', CALLBACK FUNCTION){}
  });
 
 
- -To make a post request
+ <h4>To make a post request</h4>
 
 -Basic barebone
 http.post('API ENDPOINT', DATA, CALLBACK FUNCTION){}
@@ -63,7 +62,7 @@ const data = {
  });
 
 
--To make a put request
+<h4>To make a put request</h4>
 
 -Basic barebone
 http.post('API ENDPOINT', DATA, CALLBACK FUNCTION){}
@@ -78,9 +77,9 @@ http.post('API ENDPOINT', DATA, CALLBACK FUNCTION){}
  });
 
 
--To make a delete request
+<h4>To make a delete request</h4>
 
--Basic barebone
+Basic barebone
 http.post('API ENDPOINT', CALLBACK FUNCTION){}
 
 //Delete post
@@ -91,3 +90,4 @@ http.delete('https://jsonplaceholder.typicode.com/posts/1', function (err, respo
     console.log(response)
   }
 });
+</body> 
